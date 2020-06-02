@@ -5,6 +5,9 @@ function main() {
     let card  = new Card(card_infos[i].id, card_infos[i].idMembers, card_infos[i].idLabels, card_infos[i].shortUrl)
     for(let j = 0; j < card.contributors.length; j++) {
       let contributor = card.contributors[j]
+      if(!contributor) {
+        continue;
+      }
       if( contributions[contributor]) {
         contributions[contributor]['payment'] += card.price;
         contributions[contributor]['card_total'] += 1;
