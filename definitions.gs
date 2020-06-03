@@ -1,8 +1,8 @@
 const PRICE_MAP = {
-  'green': 1000,
-  'yellow': 2000,
-  'orange': 3000,
-  'red': 4000,
-  'purple': 5000,
-  'blue': 6000
+  'green': 510,
+  'yellow': 1020,
+  'orange': 2040,
+  'red': 3060,
+  'purple': 4080,
+  'blue': 5100
 }
