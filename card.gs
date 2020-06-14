@@ -44,6 +44,11 @@ class Card {
   }
 
   get price() {
+    // 報酬は人数で分割
+    return this.getPrice() / this.members.length;
+  }
+
+  get unit_price() {
     return this.getPrice();
   }
 
@@ -54,8 +59,7 @@ class Card {
       let label = labels[i];
       price_sum += PRICE_MAP[label.color];
     }
-    // 報酬は人数で分割
-    return price_sum / this.members.length;
+    return price_sum;
   }
 
   get contributors() {
